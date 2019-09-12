@@ -14,7 +14,7 @@ add_definitions(${LLVM_DEFINITIONS})
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_EXPORT_COMPILE_COMMANDS true)
 
-add_executable(Test test.cpp)
+add_executable(Test src/test.cpp)
 
 llvm_map_components_to_libnames(llvm_libs
         support asmparser core irreader codegen asmprinter  AVRAsmPrinter AVRAsmParser
